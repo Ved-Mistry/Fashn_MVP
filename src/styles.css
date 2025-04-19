@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.app-container {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-section, .edit-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.input-box {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.primary-button, .secondary-button {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.primary-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.primary-button:disabled {
+  background-color: #a5d6a7;
+}
+
+.secondary-button {
+  background-color: #2196f3;
+  color: white;
+}
+
+.secondary-button:disabled {
+  background-color: #90caf9;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.generated-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.google-lens-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.google-lens-link {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #2196f3;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.google-lens-link:hover {
+  background-color: #1e88e5;
+}
+
+.google-lens-drop-area {
+  border: 2px dashed #2196f3;
+  padding: 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  margin-top: 10px;
+  color: #2196f3;
+  transition: border-color 0.3s;
+}
+
+.google-lens-drop-area:hover {
+  border-color: #1e88e5;
+}
+
