@@ -6,7 +6,6 @@ import cors from "cors";
 const app = express();
 app.use(cors()); 
 app.use(express.json({ limit: "50mb" })); // allow large base64 images
-const PORT = 3001;
 
 const stabilityApiKey = "sk-iMgGRFzQwnTMSnKobYQxOlbKYI4xg95XAPtYha42G8RpwjDf";
 
@@ -75,6 +74,8 @@ app.post("/edit-image", async (req, res) => {
 });
 
 // ✅ Start proxy server
+const PORT = process.env.PORT || 3001;
+
 app.listen(PORT, () => {
   console.log(`✅ Proxy server running at http://localhost:${PORT}`);
 });
