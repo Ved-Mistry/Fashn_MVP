@@ -15,7 +15,7 @@ const App = () => {
     setGeneratedImage(null);
 
     try {
-      const response = await axios.post("http://localhost:3001/generate-image", { prompt });
+      const response = await axios.post("https://fashn-mvp-server.onrender.com/generate-image", { prompt });
       setGeneratedImage(response.data.imageUrl);
     } catch (error) {
       console.error("Error generating image:", error);
@@ -30,7 +30,7 @@ const App = () => {
     setIsModifying(true);
 
     try {
-      const response = await axios.post("http://localhost:3001/edit-image", {
+      const response = await axios.post("https://fashn-mvp-server.onrender.com/edit-image", {
         base64Image: generatedImage,
         searchPrompt: searchPrompt,
         replacePrompt: modificationText,
